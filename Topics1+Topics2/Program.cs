@@ -52,6 +52,7 @@ for(int i=0;i< contents.Length; i++)
     Console.Write(contents[i]+" ");
 }
 Console.WriteLine();
+Console.WriteLine("---------------------------------------------------------------");
 
 //Write a program in C # to store elements in an array and print it. 
 //Test Data :	
@@ -61,7 +62,7 @@ Console.WriteLine();
 //element - 2 : 2.......
 //Expected Output :
 //Elements in array are: 1 1 2 3 4 5 6 7 8 9
-
+Console.WriteLine("---------------------------------------------------------------");
 int[] num = new int[10];
 for(int i=0;i<num.Length ;i++)
 {
@@ -71,4 +72,33 @@ for(int i=0;i<num.Length ;i++)
 foreach(var pointer in num)
 {
     Console.Write(pointer+" ");
+  
 }
+Console.WriteLine("---------------------------------------------------------------");
+//C# Task / Conditional statement
+//Write a C# program that accept two integers and display the smaller. 
+int num1,num2;
+Console.WriteLine("Please enter any two numbers");
+num1 = Convert.ToInt32(Console.ReadLine());
+num2 = Convert.ToInt32(Console.ReadLine());
+
+if (num1 < num2)
+{
+    Console.WriteLine($"The min value is = {num1}");
+}
+else
+Console.WriteLine($"The min value is = {num2}");
+Console.WriteLine("---------------------------------------------------------------");
+//Write a C# conditional statement to find the sign  of input  number. Display sign. Go 
+//Sample numbers: -7
+//Output: The sign is -
+Console.WriteLine($"Please enter any number");
+float num4 = Convert.ToSingle(Console.ReadLine());
+int signOfNumber = Math.Sign(num4);
+Console.WriteLine(signOfNumber);
+Console.WriteLine("---------------------------------------------------------------");
+
+
+
+
+
